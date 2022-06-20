@@ -2,6 +2,17 @@
 $primary: #5265E1;
 $secondary: #FA5959; 
 
+.text-grey{
+    color: rgb(83, 83, 83);
+}
+.boton{  
+    border-bottom: 2px solid rgb(225, 57, 57);
+}
+.bg-azul-claro{
+    background-color: #DFF2F1;
+}
+.h-500{
+    height: 500px;
 
-
+}
 @import "../node_modules/bootstrap/scss/bootstrap";
