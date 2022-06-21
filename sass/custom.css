@@ -2,16 +2,31 @@
   color: #535353;
 }
 
-.boton {
-  border-bottom: 2px solid #e13939;
-}
-
 .bg-azul-claro {
   background-color: #DFF2F1;
 }
 
-.h-500 {
-  height: 500px;
+.h-400 {
+  height: 400px;
+}
+
+.max-w {
+  max-width: 1200px;
+}
+
+.border-box {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.bg-marine {
+  background-color: #212157;
+}
+
+@media (min-width: 768px) {
+  .ancho-100 {
+    width: 100vw;
+  }
 }
 
 /*!

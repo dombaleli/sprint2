@@ -5,14 +5,27 @@ $secondary: #FA5959;
 .text-grey{
     color: rgb(83, 83, 83);
 }
-.boton{  
-    border-bottom: 2px solid rgb(225, 57, 57);
-}
 .bg-azul-claro{
     background-color: #DFF2F1;
 }
-.h-500{
-    height: 500px;
+.h-400{
+    height: 400px;
 
 }
+.max-w{
+    max-width: 1200px;
+}
+.border-box{
+    box-sizing: border-box;
+}
+.bg-marine{
+    background-color: rgb(33, 33, 87);
+}
+
+@media (min-width: 768px) {
+   .ancho-100{
+       width: 100vw;
+   }
+}
+
 @import "../node_modules/bootstrap/scss/bootstrap";
