@@ -8,9 +8,14 @@ $secondary: #FA5959;
 .bg-azul-claro{
     background-color: #DFF2F1;
 }
+.bg-grisclaro{
+    background-color: #ECECEC;
+}
+#home-tab:hover, #profile-tab:hover, #contact-tab:hover{
+    border-bottom: 2px solid red;
+}
 .h-400{
     height: 400px;
-
 }
 .max-w{
     max-width: 1200px;
@@ -21,11 +26,97 @@ $secondary: #FA5959;
 .bg-marine{
     background-color: rgb(33, 33, 87);
 }
-
-@media (min-width: 768px) {
-   .ancho-100{
-       width: 100vw;
-   }
+.underline-red {
+    border-bottom: 2px solid #FA5959;
+}
+.navbar .navbar-nav .btn:hover {
+    background-color: white;
+    color: rgb(209, 18, 18);
+}
+#link-features:hover, #link-pricing:hover, #link-contact:hover{  
+    color:red;
+}
+#boton-chrome:hover{
+    background-color: white;
+    color: #5265E1;
+    border: 2px solid #5265E1;
+}
+#boton-firefox:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+#sb, #ss, #es{
+    color: black;
+}
+#sb:hover, #ss:hover, #es:hover{
+    color:rgb(209, 18, 18);
+    font-weight: bold;
+}
+#card-chrome:hover, #card-firefox:hover, #card-opera:hover{
+    background-color: white;
+    color:#5265E1;
+    
+} 
+.accordion-button:hover{
+    color: red;
+}
+#btn-more:hover{
+    background-color: white;
+    color: #5265E1;
+}
+#btn-contactUs:hover{
+    background-color: white;
+    color:rgb(209, 18, 18);
+    font-weight: bold;
+}
+#features1, #pricing1, #contact1{  
+    color: white;
+}
+#features1:hover, #pricing1:hover, #contact1:hover{  
+    color:red;
+}
+#facebook, #twitter{
+    fill: white;
+}
+#facebook:hover, #twitter:hover{
+    fill: red;
 }
 
+@mixin card {
+    border: 0px solid rgb(197, 197, 197);
+    border-radius: 5%;
+    width: 18rem;
+    height: 20rem;
+    padding: 1rem;
+    box-shadow: 1rem 1rem 1rem 1rem rgb(171, 171, 171) ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.nth-child-1 {
+    @include card;
+    margin-bottom: 3rem;
+}
+.nth-child-2 {
+    @include card;
+    margin-bottom: 3rem;
+}
+.nth-child-3 {
+    @include card;
+}
+.h-500 {
+    height: 500px;
+}
+@media (max-width: 992px) {
+    .h-500 {
+      height: 100%;
+    }
+  }
+  @media (max-width: 576px) {
+    #myTab {
+      align-items: center;
+    }
+  }
 @import "../node_modules/bootstrap/scss/bootstrap";
